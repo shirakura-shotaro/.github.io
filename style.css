@@ -1,0 +1,147 @@
+body {
+    font-family:"Hiragino Kaku Gothic Pro", "Meiryo",sans-serif;
+    font-size: 15px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.w_inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border-top: 10px solid #79a1b1;
+}
+
+.header ul {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.header ul li {
+    width: 200px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.header ul li :first-child{
+    border-left: 1px solid #ddd;
+}
+
+.header ul li a {
+    display: block;
+}
+.header_img {
+    text-align: center;
+}
+
+.header_img img {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+@media(max-width:600px){
+    .header_img {
+        height: calc(100vh - 60px);
+    }
+}
+
+
+.container_service .service{
+    width: 100%;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.container_service .service:last-child{
+    margin-right: 0;
+}
+
+.container_service h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container_service .service img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container_service .service .ttl{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.container_service .service .explain{
+    margin-bottom: 20px;
+}
+
+.container_service .service a{
+    background-color: #79a1b1;
+    color: #fff;
+    padding: 15px 20px 12px ;
+}
+
+.container_service .service_block{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:600px){
+    .service_block {
+        flex-direction: column;
+    }
+
+    .service_block .service{
+        margin-bottom: 30px;
+    }
+}
+
+.footer{
+    margin-top: 40px;
+}
+
+.pp_link{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.copy{
+    text-align: center;
+    background: #79a1b1;
+    color: #fff;
+    font-size: 7px;
+    padding: 3px 0;
+}
+
+@media(max-width:600px){
+    .w_inner {
+       width: 100%;
+    }
+}
+
